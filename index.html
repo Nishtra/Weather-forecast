@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather forecast</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="flex-wrapper">
+        <input type="text" id="search-box" required>
+        <button id="search-btn">Search</button>
+        <div id="error-msg">No result have been found</div>
+        <img src="loader.png" alt="spinner.gif" id="spinner">
+
+        <div class="weather-box">
+            <div class="current-weather-box">
+                <div class="location" style="grid-area: loc;">Odessa, Ukraine</div>
+                <div class="icon-wrapper">
+                    <div class="icon" style="grid-area: icon;">
+                        <img src="icons/c3.png" alt="">
+                        <div class="icon-description">Cloudy</div>
+                    </div>
+                </div>
+                <div class="temp" style="grid-area: temp;">25 C</div>
+                <div class="date" style="grid-area: date;">2020.05.05</div>
+                <div class="details" style="grid-area: details;">
+                    <div class="wind">Wind</div>
+                    <div class="humidity">Hum.</div>
+                    <div class="pressure">Pressure</div>
+                </div>
+            </div>
+
+            <div class="forecast-weather-box">
+                <!-- day 1 -->
+                <div class="day-forecast">
+                    <strong class="day">Tue</strong>
+                    <span class="date">05.05.2020</span>
+                    <img src="" alt="" class="icon">
+                    <strong class="temperature">5 C</strong>
+                </div>
+                <!-- day 2 -->
+                <div class="day-forecast">
+                    <strong class="day">Tue</strong>
+                    <span class="date">05.05.2020</span>
+                    <img src="" alt="" class="icon">
+                    <strong class="temperature">5 C</strong>
+                </div>
+                <!-- day 3 -->
+                <div class="day-forecast">
+                    <strong class="day">Tue</strong>
+                    <span class="date">05.05.2020</span>
+                    <img src="" alt="" class="icon">
+                    <strong class="temperature">5 C</strong>
+                </div>
+                <!-- day 4 -->
+                <div class="day-forecast">
+                    <strong class="day">Tue</strong>
+                    <span class="date">05.05.2020</span>
+                    <img src="" alt="" class="icon">
+                    <strong class="temperature">5 C</strong>
+                </div>
+                <!-- day 5 -->
+                <div class="day-forecast">
+                    <strong class="day">Tue</strong>
+                    <span class="date">05.05.2020</span>
+                    <img src="" alt="" class="icon">
+                    <strong class="temperature">5 C</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="days_of_week.js"></script>
+    <script type="text/javascript" src="locale.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    
+</body>
+
+</html>
